@@ -1,6 +1,6 @@
 from main import BooksCollector
 import pytest
 
-@pytest.fixture()
+@pytest.fixture(scope="function")
 def collector():
     return BooksCollector()
